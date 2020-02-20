@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "https://menendezjaume.com/"
 languageCode = "en-gb"
 title = "Miguel A Menendez - Ramblings of a Security Engineer"
 theme = "hugo-strata-theme"
