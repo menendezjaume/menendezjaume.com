@@ -1,0 +1,11 @@
+<h1>Recent posts</h1>
+<div class="row">
+    <p>
+    <ol class="recent-posts">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+        {{ range first 5 $paginator.Pages }}
+            {{ .Render "summary" }}
+        {{ end }}
+    </ol>
+    </p>
+</div>

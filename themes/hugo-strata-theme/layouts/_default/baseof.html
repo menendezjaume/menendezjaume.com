@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		{{ partial "head" . }}
+	</head>
+	<body id="top">
+		{{ partial "header" . }}
+		{{ "<!-- Main -->" | safeHTML }}
+		<div id="main">
+			{{ block "main" . }}{{ end }}
+		</div>
+		{{ partial "footer" . }}
+	</body>
+</html>

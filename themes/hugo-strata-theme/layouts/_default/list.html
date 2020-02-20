@@ -1,0 +1,16 @@
+{{ define "main" }}
+    <h1>All posts</h1>
+    <div class="row">
+        <p>
+        <ol class="recent-posts">
+            {{ .Content }}
+    {{ $paginator := .Paginate .Data.Pages }}
+    {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+    {{ partial "pagination" . }}
+        </ol>
+        </p>
+    </div>
+
+{{ end }}

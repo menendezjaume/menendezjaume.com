@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <h1>All tags</h1>
+    <div class="row">
+        {{ $data := .Data }}
+        <div class="tag-cloud">
+        {{ range $key, $value := .Data.Terms.ByCount }}
+            <a href="{{ $.Site.LanguagePrefix | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}</a>
+        {{ end }}
+        </div>
+    </div>
+
+{{ end }}

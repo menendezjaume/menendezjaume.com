@@ -1,0 +1,54 @@
+baseurl = "https://example.org/"
+languageCode = "en-gb"
+title = "Miguel A Menendez - Ramblings of a Security Engineer"
+theme = "hugo-strata-theme"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 5
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Miguel A Menendez - Security Engineer"
+	description = "Miguel A Menendez - Ramblings of a Security Engineer"
+
+	# Format dates with Go's time formatting
+	date_format = "January 2, 2006"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = true
+
+	[params.sidebar]
+		avatar = "Miguel A Menendez.jpeg"
+		bio = "**I'm Micky**, </br> a Security Engineer<br> passionate about<br> cloud native technologies."
+		twitter = "menendezjaume"
+		github = "menendezjaume"
+		linkedin = "miguel-menendez"
+		medium = "menendezjaume"
+
+		copyright = [
+			"&copy; Miguel A Menendez",
+		]
+
+	[params.contact]
+		email = "me@menendezjaume.com"
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 1
+
+[[menu.main]]
+	name = "All Posts"
+	url  = "/post"
+	weight = 2
+
+[[menu.main]]
+	name = "About"
+	url  = "about"
+	weight = 3
+
+[taxonomies]
+  tag = "tags"
