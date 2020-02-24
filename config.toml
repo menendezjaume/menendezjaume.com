@@ -20,7 +20,7 @@ paginate = 5
 	show_read_time = true
 
 	[params.sidebar]
-		avatar = "Miguel A Menendez.jpeg"
+		avatar = "Miguel A Menendez.webp"
 		bio = "**I'm Micky**, </br> a Security Engineer<br> passionate about<br> cloud native technologies."
 		twitter = "menendezjaume"
 		github = "menendezjaume"
