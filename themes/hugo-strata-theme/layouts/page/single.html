@@ -2,5 +2,25 @@
 	<span>
 		<h1>{{ .Title }}</h1>
 	</span>
-	<p>{{ .Content }}</p>
+	<p>{{ .Content | safeHTML }}</p>
+	<div class="container">
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2019-09-01" }}'>
+			<h3>Cloud Security Engineer at Thought Machine</h3>
+		</div>
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2019-06-01" }}'>
+			<h3>Cloud Security Lead Engineer - Enterprise Architecture at RBC</h3>
+		</div>
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2018-10-01" }}'>
+			<h3>DevSecOps Engineer at NatWest Markets</h3>
+		</div>
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2017-07-01" }}'>
+			<h3>Application Security Architect at Motability Operations</h3>
+		</div>
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2016-08-01" }}'>
+			<h3>Senior Cyber Security Consultant at BAE Systems Applied Intelligence</h3>
+		</div>
+		<div class="timeline-item" date-is='{{ dateFormat "January 2006" "2013-09-01" }}'>
+			<h3>Senior IT Risk and Information Security Consultant at Deloitte</h3>
+		</div>
+	</div>
 {{ end }}
