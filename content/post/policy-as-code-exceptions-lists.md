@@ -28,7 +28,7 @@ This Dockerfile, as you can see, it is running a Django web application.
 
 If we were going to run conftest against our Django Dockerfile - which we are because, in this scenario, we have integrated it with our pipeline - we would get the following output:
 
-```
+```bash
 $ conftest test -p . Dockerfile 
 FAIL - Dockerfile - [base_image_not_whitelisted] The base image in use is not whitelisted - "ruby:2.5"
 FAIL - Dockerfile - [blacklisted_commands] The Dockerfile is installing unauthorised third-party software - "apt-get update -qq && apt-get install -y nodejs postgresql-client"
@@ -56,7 +56,7 @@ To make it as user friendly as possible, I have also created an `exception_messa
 
 Now, let's run conftest once more:
 
-```
+```bash
 $ conftest test -p . Dockerfile 
 FAIL - Dockerfile - [base_image_not_whitelisted] The base image in use is not whitelisted - "ruby:2.5" (Exception code: 8f1b53862732a9fdf2c5725e7f509ecf2d6c98ff2518cafbc8adac73865c1f29)
 FAIL - Dockerfile - [blacklisted_commands] The Dockerfile is installing unauthorised third-party software - "apt-get update -qq && apt-get install -y nodejs postgresql-client" (Exception code: 8f1b53862732a9fdf2c5725e7f509ecf2d6c98ff2518cafbc8adac73865c1f29)
@@ -72,7 +72,7 @@ As you can see, we obtain the same failures, but this time, they are accompanied
 
 If we run conftest once again:
 
-```
+```bash
 $ conftest test -p . Dockerfile 
 FAIL - Dockerfile - [base_image_not_whitelisted] The base image in use is not whitelisted - "ruby:2.5" (Exception code: 8f1b53862732a9fdf2c5725e7f509ecf2d6c98ff2518cafbc8adac73865c1f29)
 --------------------------------------------------------------------------------
