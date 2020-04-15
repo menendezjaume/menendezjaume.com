@@ -1,8 +1,9 @@
 +++
-banner = "banners/placeholder.png"
+banner = "images/code.webp"
 date = "2020-03-14T13:47:08+02:00"
 tags = ["Encryption", "GPG", "PGP"]
 title = "How to Use PGP to Encrypt Your Terraform Secrets"
+short_description = "Protect your infrastructure secrets using strong encryption."
 +++
 
 If like me, you also use the terraform binary from your computer to describe and deploy the infrastructure of your projects, you might want to add an extra level of security. This extra level of security that I am referring to is encrypting your terraform secrets, both on-screen and in the terraform state files.

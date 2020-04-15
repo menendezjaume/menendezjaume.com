@@ -1,8 +1,9 @@
 +++
-banner = "banners/placeholder.png"
+banner = "images/gocheese-after.webp"
 date = "2020-03-28T13:47:08+02:00"
 tags = ["Security Awareness"]
 title = "gocheese.me - a Security Awareness Tool"
+short_description = "A web-based tool to increase security awareness amongst your peers."
 +++
 
 In times where most of us are working remotely, I thought it was important to remind us all of the importance of security awareness, an aspect of security that thanks to the protection of our homes may sometimes be neglected.

@@ -1,8 +1,9 @@
 +++
-banner = "banners/placeholder.png"
+banner = "images/conftest.webp"
 date = "2020-02-26T13:47:08+02:00"
 tags = ["Policy as code", "conftest","OPA", "Rego"]
 title = "Creating Exceptions Lists for Conftest in Rego"
+short_description = "Use policy as code and offload your policy decision-making from your software."
 +++
 
 For those who don't know what conftest is, conftest is an open-source utility that helps engineers write tests against structured configuration data. At the time of writing, conftest supports many formats such as YAML, JSON, Dockerfile, and HCL/HCL2 amongst others. This variety of formats allows teams to validate their configurations regardless of the platform they belong to before making changes to live systems.
