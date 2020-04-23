@@ -1,6 +1,6 @@
 baseurl = "https://menendezjaume.com/"
 languageCode = "en-gb"
-title = "Micky Menendez - Security Engineer"
+title = "Miguel A Menendez - Security Engineer"
 theme = "hugo-strata-theme"
 # Enable Google Analytics by inserting your tracking code
 googleAnalytics = ""
@@ -11,8 +11,8 @@ pygmentsUseClasses=true
 [params]
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Micky Menendez - Security Engineer"
-	description = "Micky Menendez - Security Engineer"
+	name = "Miguel A Menendez - Security Engineer"
+	description = "Miguel A Menendez - Security Engineer"
 
 	# Format dates with Go's time formatting
 	date_format = "January 2, 2006"
@@ -21,15 +21,15 @@ pygmentsUseClasses=true
 	show_read_time = true
 
 	[params.sidebar]
-		avatar = "Micky Menendez.webp"
-		bio = "**I'm Micky**, </br> a Security Engineer<br> passionate about<br> cloud native technologies."
+		avatar = "Miguel A Menendez.webp"
+		bio = "**I'm Miguel**, </br> a security engineering geek<br> passionate about<br> cloud native technologies."
 		twitter = "menendezjaume"
 		github = "menendezjaume"
 		linkedin = "miguel-menendez"
 		medium = "menendezjaume"
 
 		copyright = [
-			"&copy; Micky Menendez",
+			"&copy; Miguel A Menendez",
 		]
 
 	[params.contact]

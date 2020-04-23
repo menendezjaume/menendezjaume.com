@@ -50,7 +50,7 @@ For my key, I created the following file I called `key-gen-template`:
 %echo Generating a default key
 Key-Type: default
 Subkey-Type: default
-Name-Real: Micky Menendez
+Name-Real: Miguel A Menendez
 Name-Comment: How to Use PGP to Encrypt Your Terraform Secrets
 Name-Email: article@menendezjaume.com
 Expire-Date: 2
@@ -173,7 +173,7 @@ Now, if we query terraform for the `secret_access_key`, base64 decode it and dec
 ```bash
 $ terraform output secret_access_key | base64 --decode | gpg --decrypt
 gpg: encrypted with 3072-bit RSA key, ID 8489944AC3CC4DB7, created 2020-04-05
-      "Micky Menendez (How to Use PGP to Encrypt Your Terraform Secrets) <article@menendezjaume.com>"
+      "Miguel A Menendez (How to Use PGP to Encrypt Your Terraform Secrets) <article@menendezjaume.com>"
 arI8ugTYGImzlojr022gc55L8cPqAdweUNiiswz3
 ```
 

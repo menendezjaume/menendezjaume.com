@@ -5,7 +5,7 @@ title = "About"
 type = "page"
 +++
 
-Hi! I am Micky, and I am a Cloud Security Engineer at Thought Machine, where we are building a next generation cloud native core banking platform.
+Hi! I am Miguel, but many people call me Micky. I am a security engineering geek at Thought Machine, where we are building a next generation cloud native core banking platform.
 
 I am passionate about cloud-native technologies, and love to talk about security and automation.
 
