@@ -21,7 +21,7 @@ pygmentsUseClasses=true
 	show_read_time = true
 
 	[params.sidebar]
-		avatar = "Miguel A Menendez.webp"
+		avatar = "Miguel A Menendez.png"
 		bio = "**I'm Miguel**, </br> a security engineering geek<br> passionate about<br> cloud native technologies."
 		twitter = "menendezjaume"
 		github = "menendezjaume"

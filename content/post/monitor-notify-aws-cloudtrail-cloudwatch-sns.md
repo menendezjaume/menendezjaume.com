@@ -1,5 +1,5 @@
 +++
-banner = "images/AWS_CloudTrail_CloudWatch_SNS_Terraform_module.webp"
+banner = "images/AWS_CloudTrail_CloudWatch_SNS_Terraform_module.png"
 date = "2020-04-26T11:47:08+02:00"
 tags = ["aws", "cloudtrail", "cloudwatch", "logging", "monitoring", "Terraform"]
 title = "Monitor and Notify on AWS Account Root User Activity and Other Security Metrics"
@@ -17,7 +17,7 @@ Now, the implementation steps are simple, yet a bit convoluted due to the number
 
 Here is a diagram describing the flow that our logs and alerts will follow.
 
-{{< figure src="/images/AWS_CloudTrail_CloudWatch_SNS_Terraform_module.webp" class="image fit" >}}
+{{< figure src="/images/AWS_CloudTrail_CloudWatch_SNS_Terraform_module.png" class="image fit" >}}
 
 As you can see, I stop at the creation of an SNS and its topic. The reason being that you might want to subscribe via email (not currently supported by Terraform), consume it via an SQS queue and send it to some processing engine, or put a lambda function behind for faster response time. Also, it is important to note that CloudTrail logs can - and in an enterprise-grade deployment probably should - be encrypted. I'm not doing so in this write and module as I wanted it to budget, so it is virtually free.
 

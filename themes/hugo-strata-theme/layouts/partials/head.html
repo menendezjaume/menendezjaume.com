@@ -5,7 +5,7 @@
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
 
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
 <meta prefix="og: http://ogp.me/ns#" property="og:url" name="url" content="{{ .Permalink }}">
 <meta prefix="og: http://ogp.me/ns#" property="og:title" name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta prefix="og: http://ogp.me/ns#" property="og:description" name="description" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.short_description }}{{ end }}" />

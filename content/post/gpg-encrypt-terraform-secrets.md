@@ -1,5 +1,5 @@
 +++
-banner = "images/code.webp"
+banner = "images/code.png"
 date = "2020-03-14T13:47:08+02:00"
 tags = ["Encryption", "GPG", "PGP"]
 title = "How to Use PGP to Encrypt Your Terraform Secrets"

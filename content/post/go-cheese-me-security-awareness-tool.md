@@ -1,5 +1,5 @@
 +++
-banner = "images/gocheese-after.webp"
+banner = "images/gocheese-after.png"
 date = "2020-03-28T13:47:08+02:00"
 tags = ["Security Awareness"]
 title = "gocheese.me - a Security Awareness Tool"
@@ -28,11 +28,11 @@ As a result of the benefits that I've seen come from these practices, I have cre
 
 [gocheese.me](gocheese.me) is a tool anyone can use to privately have a laugh with someone who's left their workstation unlocked and unattended without shaming them publicly or belittling them in any way.
 
-{{< figure src="/images/gocheese-before.webp" class="image fit" title="Go Cheese Me (gocheese.me) before cheesing" >}}
+{{< figure src="/images/gocheese-before.png" class="image fit" title="Go Cheese Me (gocheese.me) before cheesing" >}}
 
 It works by visiting the website and confirming that you want to _cheese_ someone from the workstation you are visiting from. Once you click on the _cheese me!_ button, the message changes for one saying that you've been cheesed, and a description of how to lock your workstation next time. Also, to make it a little more fun, the background changes with a random meme.
 
-{{< figure src="/images/gocheese-after.webp" class="image fit" title="Go Cheese Me (gocheese.me) after cheesing" >}}
+{{< figure src="/images/gocheese-after.png" class="image fit" title="Go Cheese Me (gocheese.me) after cheesing" >}}
 
 
 And, let's not forget, since it's a security tool, I thought I'd share the source code so everyone can see that I'm not doing anything in the background. Also, you can fork it and make it your own!

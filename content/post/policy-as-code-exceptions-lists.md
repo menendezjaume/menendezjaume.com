@@ -1,5 +1,5 @@
 +++
-banner = "images/conftest.webp"
+banner = "images/conftest.png"
 date = "2020-02-26T13:47:08+02:00"
 tags = ["Policy as code", "conftest","OPA", "Rego"]
 title = "Creating Exceptions Lists for Conftest in Rego"
