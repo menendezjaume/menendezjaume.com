@@ -5,10 +5,11 @@
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
 
-<meta property="og:url" name="url" content="{{ .Permalink }}">
-<meta property="og:title" name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description" name="description" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.short_description }}{{ end }}" />
-<meta property="og:image" name="image" content="{{ .Site.BaseURL }}{{ if .IsHome }}images/{{ .Site.Params.sidebar.avatar }}{{ else }}{{ .Params.banner }}{{ end }}">
+<meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+<meta prefix="og: http://ogp.me/ns#" property="og:url" name="url" content="{{ .Permalink }}">
+<meta prefix="og: http://ogp.me/ns#" property="og:title" name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta prefix="og: http://ogp.me/ns#" property="og:description" name="description" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.short_description }}{{ end }}" />
+<meta prefix="og: http://ogp.me/ns#" property="og:image" name="image" content="{{ .Site.BaseURL }}{{ if .IsHome }}images/{{ .Site.Params.sidebar.avatar }}{{ else }}{{ .Params.banner }}{{ end }}">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@{{ .Site.Params.sidebar.twitter }}" />
