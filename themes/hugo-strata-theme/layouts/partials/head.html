@@ -5,10 +5,10 @@
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.LanguageCode }}<meta http-equiv="content-language" content="{{ . }}" />{{ end }}
 
-<meta name="og:url" content="{{ .Permalink }}">
-<meta name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta name="og:description" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.short_description }}{{ end }}" />
-<meta name="og:image" content="{{ .Site.BaseURL }}{{ if .IsHome }}images/{{ .Site.Params.sidebar.avatar }}{{ else }}{{ .Params.banner }}{{ end }}">
+<meta property="og:url" name="og:url" content="{{ .Permalink }}">
+<meta property="og:title" name="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" name="og:description" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Params.short_description }}{{ end }}" />
+<meta property="og:image" name="og:image" content="{{ .Site.BaseURL }}{{ if .IsHome }}images/{{ .Site.Params.sidebar.avatar }}{{ else }}{{ .Params.banner }}{{ end }}">
 
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@{{ .Site.Params.sidebar.twitter }}" />
